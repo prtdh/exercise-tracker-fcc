@@ -14,7 +14,7 @@ app.use(bodyparser.urlencoded({extended:true}))
 
 //connecting database
 
-mongoose.connect('mongodb+srv://prtdh20:preetpal@nodeexpress.bdgie.mongodb.net/exerciseTracker?retryWrites=true&w=majority',{
+mongoose.connect(process.env.db,{
           useUnifiedTopology:true,
           useNewUrlParser:true
 },
